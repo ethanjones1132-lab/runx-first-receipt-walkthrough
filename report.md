@@ -7,7 +7,7 @@
 
 ## Where it lives
 
-- Public walkthrough URL: PLACEHOLDER_PUBLIC_URL
+- Public walkthrough URL: https://github.com/ethanjones1132-lab/runx-first-receipt-walkthrough
 - Links included to https://runx.ai and https://github.com/runxhq/runx
 
 ## Why this is authentic support (not link spam)

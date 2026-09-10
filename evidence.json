@@ -3,7 +3,7 @@
   "observations": [
     {
       "claim_type": "useful_walkthrough",
-      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "public_url": "https://github.com/ethanjones1132-lab/runx-first-receipt-walkthrough",
       "runx_link_found": true,
       "runx_links": ["https://runx.ai", "https://github.com/runxhq/runx"],
       "summary": "README walkthrough documents real npx @runxhq/cli@0.9.0 hello-world seal with receipt_id sha256:6deb75e56a1c79f526ef32ad6ab23dfd0240f1067daa66e1d45e2bef53173802",
@@ -16,7 +16,7 @@
     },
     {
       "claim_type": "artifact_files",
-      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "public_url": "https://github.com/ethanjones1132-lab/runx-first-receipt-walkthrough",
       "runx_link_found": true,
       "summary": "Repo contains README.md walkthrough, evidence.json, report.md, and hello-world-sealed-run.json captured from the live seal.",
       "audience": "Frantic reviewers and runx newcomers",
@@ -24,7 +24,7 @@
     },
     {
       "claim_type": "live_command_proof",
-      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "public_url": "https://github.com/ethanjones1132-lab/runx-first-receipt-walkthrough",
       "runx_link_found": true,
       "summary": "Command used: npx --yes @runxhq/cli@latest skill ./examples/hello-world -i message=... --json; outcome completed status sealed.",
       "audience": "reviewers validating authenticity",
@@ -32,7 +32,7 @@
     },
     {
       "claim_type": "specificity",
-      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "public_url": "https://github.com/ethanjones1132-lab/runx-first-receipt-walkthrough",
       "runx_link_found": true,
       "summary": "Walkthrough explains what runx is (governed runtime beneath agents), why receipts matter, exact commands, and next docs to read — not a generic link drop.",
       "audience": "future contributors",
