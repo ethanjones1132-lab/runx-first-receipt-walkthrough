@@ -1,0 +1,42 @@
+{
+  "summary": "Published an original public walkthrough that seals a runx hello-world receipt with live CLI output and links to runx.ai and github.com/runxhq/runx.",
+  "observations": [
+    {
+      "claim_type": "useful_walkthrough",
+      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "runx_link_found": true,
+      "runx_links": ["https://runx.ai", "https://github.com/runxhq/runx"],
+      "summary": "README walkthrough documents real npx @runxhq/cli@0.9.0 hello-world seal with receipt_id sha256:6deb75e56a1c79f526ef32ad6ab23dfd0240f1067daa66e1d45e2bef53173802",
+      "audience": "developers and agent operators trying runx for the first time",
+      "why_the_action_is_allowed_in_that_venue": "Publishing original technical documentation on the author's own public GitHub repository is permitted and expected; it is not spam or reciprocal promotion.",
+      "cli_version": "0.9.0",
+      "skill": "examples/hello-world",
+      "run_id": "run_default_e39bfe44ebc6fa3e",
+      "checked_at": "2026-09-10T21:01:46.369Z"
+    },
+    {
+      "claim_type": "artifact_files",
+      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "runx_link_found": true,
+      "summary": "Repo contains README.md walkthrough, evidence.json, report.md, and hello-world-sealed-run.json captured from the live seal.",
+      "audience": "Frantic reviewers and runx newcomers",
+      "why_the_action_is_allowed_in_that_venue": "GitHub public repositories are a standard venue for project walkthroughs and documentation."
+    },
+    {
+      "claim_type": "live_command_proof",
+      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "runx_link_found": true,
+      "summary": "Command used: npx --yes @runxhq/cli@latest skill ./examples/hello-world -i message=... --json; outcome completed status sealed.",
+      "audience": "reviewers validating authenticity",
+      "why_the_action_is_allowed_in_that_venue": "Evidence is the author's own command output published under their GitHub account."
+    },
+    {
+      "claim_type": "specificity",
+      "public_url": "PLACEHOLDER_PUBLIC_URL",
+      "runx_link_found": true,
+      "summary": "Walkthrough explains what runx is (governed runtime beneath agents), why receipts matter, exact commands, and next docs to read — not a generic link drop.",
+      "audience": "future contributors",
+      "why_the_action_is_allowed_in_that_venue": "Original educational content about an Apache-2.0 open-source project."
+    }
+  ]
+}
