@@ -1,0 +1,40 @@
+name: Kai commissioned native Windows test
+on: workflow_dispatch
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+env:
+  KAI_WORKER: '0xa3ea7075dff12255ffa675c0e541d5ed279f06e2'
+jobs:
+  profiler:
+    runs-on: windows-2025
+    timeout-minutes: 10
+    steps:
+      - name: Disclosed test of Kai software
+        shell: pwsh
+        run: |
+          $ErrorActionPreference='Stop'
+          $py=(Get-Command python.exe -ErrorAction Stop).Source
+          $w='kai_csv_profiler-0.2.4rc1-py3-none-any.whl'
+          curl.exe --fail --location --proto '=https' --proto-redir '=https' --max-time 45 --max-filesize 11359 "https://raw.githubusercontent.com/$env:GITHUB_REPOSITORY/$env:GITHUB_SHA/$w" -o $w
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & $py -c 'import base64,pathlib,zlib;pathlib.Path("probe.py").write_bytes(zlib.decompress(base64.b64decode("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")))'
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          if ((Get-FileHash probe.py -Algorithm SHA256).Hash.ToLower() -ne 'be4976b32e5e02535537e803298d122231e674f27f8cf8421dcc0913ea81b272') { throw 'Probe hash mismatch' }
+          & $py probe.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Attest exact observation
+        id: attest
+        uses: actions/attest@60c80190bb1a4fb35e5724ede753db5656412b68
+        with:
+          subject-path: observation.json
+          create-storage-record: false
+      - name: Export signed capsule
+        shell: pwsh
+        env:
+          ATTESTATION_BUNDLE: ${{ steps.attest.outputs.bundle-path }}
+        run: |
+          $ErrorActionPreference='Stop'
+          python.exe -c 'import base64,json,os,pathlib; r=pathlib.Path("observation.json").read_bytes(); b=pathlib.Path(os.environ["ATTESTATION_BUNDLE"]).read_bytes(); assert 0<len(r)<=32768 and 0<len(b)<=49152; c={"schema":"kai-signed-observation-v1","report_base64":base64.b64encode(r).decode("ascii"),"bundle":json.loads(b)}; e=(json.dumps(c,sort_keys=True,separators=(",",":"))+"\n").encode("ascii"); assert len(e)<=98304; print("KAI_SIGNED_CAPSULE_BEGIN"); print(e.decode("ascii"),end=""); print("KAI_SIGNED_CAPSULE_END")'
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
